@@ -40,6 +40,7 @@ POST /api/login - logs in a registered user and provide a token for acessing fur
 GET /api/view/ - gets all the available event.
 GET /api/view/ascend - gets all the available event in ascending order.
 GET /api/view/descend - gets all the available event in descending order.
+GET /api/view?location=delhi - filters all the available event in that location.
 POST /api/create - creates a new event.
 PATCH /api/:id - lets user to book a particular event by its ID.
 PATCH /api/update/:id - lets the author user to update its existinbg event. (only the author user can update)

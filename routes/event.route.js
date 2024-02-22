@@ -38,6 +38,25 @@ eventRouter.get("/view/:sort", async (req, res) => {
 
 })
 
+eventRouter.get("/view", async (req, res) => {
+    const location = req.query.location
+    if (location) {
+        const events = await eventModel.find({ location: location })
+        res.send({
+            "msg": "all events down below",
+            events
+        })
+    }
+    else {
+        const events = await eventModel.find()
+        res.send({
+            "msg": "all events down below",
+            events
+        })
+    }
+
+})
+
 eventRouter.post("/create", async (req, res) => {
     const { userid, title, description, location } = req.body
     let user = await userModel.findOne({ _id: userid })
