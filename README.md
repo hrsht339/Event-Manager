@@ -11,6 +11,7 @@ Backend: https://event-manager-ulni.onrender.com/
 Database: Mongo Atlas
 
 ## Video Walkthrough of the project
+https://vimeo.com/915733345/6382a73484?share=copy
 
 ## Features
 
